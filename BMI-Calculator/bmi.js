@@ -10,7 +10,7 @@ function bmiCalc() {
     // Calculate BMI
     const bmi = weight / (height * height);
 
-    if(isNaN(bmi)|| bmi<0 || height<=0 || weight<=0 ){
+    if(isNaN(bmi)|| bmi<=0 || height<=0 || weight<=0 ){
         message.hidden = false; // Show the error message
         message.textContent = "Please enter valid positive numbers."; // Set error message
         score.textContent = "0"; // Clear the BMI result 
@@ -19,12 +19,12 @@ function bmiCalc() {
     else if (bmi<18.5) {
         document.getElementById('score').textContent=0;
         message.hidden = false; // Show the  message
-        message.textContent = "you are normal"; // Set the  message
+        message.textContent = "you are underweight"; // Set the  message
     }
     else if (bmi>=18.5 && bmi<=24.9) {
         document.getElementById('score').textContent=0;
         message.hidden = false; // Show the message
-        message.textContent = "you are underweight"; // Set the message
+        message.textContent = "you are normal"; // Set the message
     }
     else if (bmi >=25 && bmi<=29.9) {
         document.getElementById('score').textContent=0;
