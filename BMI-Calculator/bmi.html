@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive BMI Calculator</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="inputs">
+            <input type="number" id="weight" placeholder="Enter your weight in kg">
+            <input type="number" id="height" placeholder="Enter your height in cm">
+        </div>
+        <button onclick="bmiCalc()">Calculate BMI</button>
+        <h1>BMI Score: <span id="score">0</span></h1>
+        <p hidden id="message"> </p>
+    </div>
+
+    <script src="bmi.js"></script>
+</body>
+</html>
