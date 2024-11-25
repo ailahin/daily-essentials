@@ -6,6 +6,7 @@ function bmiCalc() {
     const message= document.getElementById('message')
     const score = document.getElementById('score');
     const height = heightInCm / 100
+
     
     // Calculate BMI
     const bmi = weight / (height * height);
@@ -19,17 +20,17 @@ function bmiCalc() {
     else if (bmi<18.5) {
         document.getElementById('score').textContent=0;
         message.hidden = false; // Show the  message
-        message.textContent = "you are underweight"; // Set the  message
+        message.textContent = "You are underweight"; // Set the  message
     }
     else if (bmi>=18.5 && bmi<=24.9) {
         document.getElementById('score').textContent=0;
         message.hidden = false; // Show the message
-        message.textContent = "you are normal"; // Set the message
+        message.textContent = "You are normal"; // Set the message
     }
     else if (bmi >=25 && bmi<=29.9) {
         document.getElementById('score').textContent=0;
         message.hidden = false; // Show the message
-        message.textContent = "you are overweight"; // Set the  message
+        message.textContent = "You are overweight"; // Set the  message
     }
     else if (bmi>29.9) {
         document.getElementById('score').textContent=0;
@@ -45,6 +46,7 @@ function bmiCalc() {
      }
      
      score.textContent = bmi.toFixed(3);
+     
     
     
     return bmi;
